@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/main.css",
+	"sources": [
+		"../sass/main.scss"
+	],
+	"sourcesContent": [
+		"header{\n  background-color: black;\n  color: white;\n  padding: 20px;\n  h1{\n   text-align: center;\n }\n button{\n   float: right;\n }\n}\nsection{\n  margin-top: 10px;\n  padding: 20px;\n  h2{\n    text-align: center;\n  }\n  p{\n    em{\n      color: red;\n    }\n  }\n  form{\n    border-radius: 30px;\n    border-color: gray;\n    border-width: 0.5px;\n    border-style: solid;\n    padding: 30px;\n    margin: 10px;\n  }\n}\nfooter{\n  background-color: black;\n  color: white;\n  padding: 20px;\n  height: 80px;\n  p{\n    text-align: center;\n  }\n}\n"
+	],
+	"mappings": ";AAAA,AAAA,MAAM,CAAA;EACJ,gBAAgB,EAAE,KAAM;EACxB,KAAK,EAAE,KAAM;EACb,OAAO,EAAE,IAAK;CAOf;;;AAVD,AAIE,MAJI,CAIJ,EAAE,CAAA;EACD,UAAU,EAAE,MAAO;CACpB;;;AANF,AAOC,MAPK,CAOL,MAAM,CAAA;EACJ,KAAK,EAAE,KAAM;CACd;;;AAEF,AAAA,OAAO,CAAA;EACL,UAAU,EAAE,IAAK;EACjB,OAAO,EAAE,IAAK;CAiBf;;;AAnBD,AAGE,OAHK,CAGL,EAAE,CAAA;EACA,UAAU,EAAE,MAAO;CACpB;;;AALH,AAOI,OAPG,CAML,CAAC,CACC,EAAE,CAAA;EACA,KAAK,EAAE,GAAI;CACZ;;;AATL,AAWE,OAXK,CAWL,IAAI,CAAA;EACF,aAAa,EAAE,IAAK;EACpB,YAAY,EAAE,IAAK;EACnB,YAAY,EAAE,KAAM;EACpB,YAAY,EAAE,KAAM;EACpB,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,IAAK;CACd;;;AAEH,AAAA,MAAM,CAAA;EACJ,gBAAgB,EAAE,KAAM;EACxB,KAAK,EAAE,KAAM;EACb,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,IAAK;CAId;;;AARD,AAKE,MALI,CAKJ,CAAC,CAAA;EACC,UAAU,EAAE,MAAO;CACpB",
+	"names": []
+}

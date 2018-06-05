@@ -1,0 +1,40 @@
+header{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  h1{
+   text-align: center;
+ }
+ button{
+   float: right;
+ }
+}
+section{
+  margin-top: 10px;
+  padding: 20px;
+  h2{
+    text-align: center;
+  }
+  p{
+    em{
+      color: red;
+    }
+  }
+  form{
+    border-radius: 30px;
+    border-color: gray;
+    border-width: 0.5px;
+    border-style: solid;
+    padding: 30px;
+    margin: 10px;
+  }
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 80px;
+  p{
+    text-align: center;
+  }
+}
