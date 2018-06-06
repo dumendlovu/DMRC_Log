@@ -28,6 +28,39 @@ section{
     padding: 30px;
     margin: 10px;
   }
+  table {
+    border-collapse: collapse;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    overflow-y: scroll;
+    width: fit-content;
+  }
+  td, th {
+    border: solid rgb(200, 200, 200) 1px;
+    padding: .5rem;
+  }
+  th {
+    background-color: rgb(190, 220, 250);
+    border-bottom: rgb(50, 50, 100) solid 2px;
+    border-top: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  td {
+    border-bottom: none;
+    color: rgb(20, 20, 20);
+    white-space: nowrap;
+  }
+  td:first-of-type, th:first-of-type {
+    border-left: none;
+  }
+  td:last-of-type, th:last-of-type {
+    border-right: none;
+  }
 }
 footer{
   background-color: black;

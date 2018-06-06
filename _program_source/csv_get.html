@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <title>DRMC Patient Log</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--Libraries-->
+  <link rel="stylesheet" href="_lib/bootstrap-4/css/bootstrap.css">
+  <!--Jquery-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <header class="col-md-12">
+        <h1>DRMC Patient Registation - Data Retrieval</h1>
+        <a href="index.html">
+          <button type="button" class="btn btn-success">Data Addition</button>
+        </a>
+      </header>
+    </div>
+    <div class="row">
+      <section class="col-md-12">
+        <h2 align="center">Retrieve Patient Informaton</h2>
+        <br>
+        <h3>Instructions</h3>
+        <p> 1. Click the "Load Data" button <br>2. Click the "Export as Excel File" button <br></p>
+        <div align="center">
+          <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
+          <button type="button" name="export_excel" id="export_excel" class="btn btn-info">Export as Excel File</button>
+        </div>
+        <br>
+        <div id="csv_table" class="table-container"></div>
+      </section>
+    </div>
+    <div class="row">
+      <footer class="col-md-12">
+        <p>Designed by Dumezweni Ndlovu</p>
+      </footer>
+    </div>
+  </div>
+<script type="text/javascript" src="_lib/jquery.table2excel.min.js"></script>
+<script type="text/javascript" src="_lib/jquery.table2excel.js"></script>
+<script type="text/javascript" src="javaScript/csvLoadAjax.js"></script>
+<script type="text/javascript" src="javaScript/exportExcel.js"></script>
+</body>
+</html>
