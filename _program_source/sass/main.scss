@@ -8,6 +8,9 @@ header{
  button{
    float: right;
  }
+ #back_button{
+   margin-right: 20px;
+ }
 }
 section{
   margin-top: 10px;
@@ -30,10 +33,10 @@ section{
   }
   table {
     border-collapse: collapse;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
     display: block;
     margin: auto;
-    max-width: 100px;
+    max-width: 90%;
     overflow-y: scroll;
     width: fit-content;
   }

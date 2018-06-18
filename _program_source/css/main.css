@@ -15,23 +15,28 @@ header button {
   float: right;
 }
 
-/* line 12, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 11, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+header #back_button {
+  margin-right: 20px;
+}
+
+/* line 15, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section {
   margin-top: 10px;
   padding: 20px;
 }
 
-/* line 15, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 18, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section h2 {
   text-align: center;
 }
 
-/* line 19, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 22, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section p em {
   color: red;
 }
 
-/* line 23, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 26, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section form {
   border-radius: 30px;
   border-color: gray;
@@ -41,24 +46,24 @@ section form {
   margin: 10px;
 }
 
-/* line 31, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 34, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section table {
   border-collapse: collapse;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
   display: block;
   margin: auto;
-  max-width: 100px;
+  max-width: 90%;
   overflow-y: scroll;
   width: fit-content;
 }
 
-/* line 40, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 43, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section td, section th {
   border: solid #c8c8c8 1px;
   padding: .5rem;
 }
 
-/* line 44, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 47, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section th {
   background-color: #bedcfa;
   border-bottom: #323264 solid 2px;
@@ -69,24 +74,24 @@ section th {
   text-transform: uppercase;
 }
 
-/* line 53, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 56, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section td {
   border-bottom: none;
   color: #141414;
   white-space: nowrap;
 }
 
-/* line 58, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 61, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section td:first-of-type, section th:first-of-type {
   border-left: none;
 }
 
-/* line 61, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 64, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 section td:last-of-type, section th:last-of-type {
   border-right: none;
 }
 
-/* line 65, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 68, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 footer {
   background-color: black;
   color: white;
@@ -94,7 +99,7 @@ footer {
   height: 80px;
 }
 
-/* line 70, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
+/* line 73, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 footer p {
   text-align: center;
 }

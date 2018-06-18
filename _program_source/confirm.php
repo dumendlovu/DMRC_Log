@@ -54,7 +54,12 @@ file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
     <div class="row">
       <header class="col-md-12">
         <h1>DRMC Patient Registation</h1>
-        <button type="button" class="btn btn-success">Access Data</button>
+        <a href="index.html">
+          <button id="back_button" type="button" class="btn btn-success">Back</button>
+        </a>
+        <a href="csv_get.html">
+          <button type="button" class="btn btn-success">Access Data</button>
+        </a>
       </header>
     </div>
     <div class="row">

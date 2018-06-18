@@ -27,7 +27,6 @@ function validateForm() {
     if (refDoctor == "") correctionMSG += "The Referring Doctor must be entered.\n";
     if (reqExam == "--select--") correctionMSG += "Please select the Requested Procedure.\n";
 
-
     if (correctionMSG == ""){
       return true;
     }
