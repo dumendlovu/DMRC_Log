@@ -11,13 +11,13 @@ header h1 {
 }
 
 /* line 8, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
-header button {
+header .buttonDiv {
   float: right;
 }
 
 /* line 11, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
 header #back_button {
-  margin-right: 20px;
+  margin: 10px;
 }
 
 /* line 15, /Applications/MAMP/htdocs/DMRC_Log/_program_source/sass/main.scss */
