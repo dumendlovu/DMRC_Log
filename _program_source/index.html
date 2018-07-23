@@ -27,8 +27,12 @@
         <form name="patientForm" action="confirm.php" method="POST" onsubmit="return validateForm()">
           <h3>Patient Personal Informaton</h3>
           <div class="form-group">
-            <label for="pateLastName">Patient's Family Name:</label>
-            <input type="text" class="form-control" id="pateLastName" name="pateLastName" placeholder="Family Name">
+            <div class="form-row">
+              <div class="col">
+                <label for="pateLastName">Patient's Family Name:</label>
+                <input type="text" class="form-control" id="pateLastName" name="pateLastName" placeholder="Family Name">
+              </div>
+            </div>
           </div>
           <div class="form-group">
             <div class="form-row">
@@ -42,20 +46,27 @@
               </div>
             </div>
           </div>
-          <div class="form-group form-row">
-            <label for="gender" class="col-md-3 col-form-label">Gender:</label>
-            <br>
-            <div class="form-check form-check-inline col-md-2">
-              <input type="radio" class="form-control" name="gender" id="gender-m" value="male"> Male
-              <input type="radio" class="form-control" name="gender" id="gender-f" value="female"> Female
+          <div class="form-group">
+            <div class="form-row">
+              <label for="gender" class="col-md-3 col-form-label">Gender:</label>
+              <br>
+              <div class="form-check form-check-inline col-md-6">
+                <label for="gender-m" class="col-md-3 col-form-label">Male</label>
+                <input type="checkbox" class="form-control" name="gender-m" id="gender-m" value="male">
+                <label for="gender-f" class="col-md-3 col-form-label">Female</label>
+                <input type="checkbox" class="form-control" name="gender" id="gender-f" value="female">
+              </div>
             </div>
           </div>
-          <div class="form-group form-row">
-            <label for="dob" class="col-md-3 col-form-label">Date of Birth:</label>
-            <div class="col-md-2">
-              <input type="date" class="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY">
+          <div class="form-group">
+            <div class="form-row">
+              <label for="dob" class="col-md-3 col-form-label">Date of Birth:</label>
+              <div class="col-md-3">
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="DD/MM/YYYY">
+              </div>
             </div>
           </div>
+          <br>
           <h3>Medical Aid information</h3>
           <div class="form-group">
             <div class="form-row">
@@ -67,7 +78,7 @@
                   <option>CIMAS</option>
                   <option>ENG</option>
                   <option>MASCA</option>
-                  <option>MUN HARARE</option>
+                  <option>LIBERTY</option>
                   <option>NORTHERN ALLIANCE</option>
                   <option>GALAXY</option>
                   <option>PSMAS</option>
@@ -76,6 +87,7 @@
                   <option>TN</option>
                   <option>G/HEALTH</option>
                   <option>ALTFIN</option>
+                  <option>ETERNAL PEACE</option>
                   <option>OTHER</option>
                 </select>
               </div>
@@ -125,24 +137,58 @@
               </div>
             </div>
           </div>
+          <br>
           <h3>Visit Informaton</h3>
           <div class="form-group">
-            <label for="refDoctor">Referring Doctor:</label>
-            <input type="text" class="form-control" id="refDoctor" name="refDoctor" placeholder="Surname Initial">
+            <div class="form-row">
+              <div class="col">
+                <label for="vBranch">Branch Name</label>
+                <select type="text" class="form-control" id="vBranch" name="vBranch">
+                  <option>--select--</option>
+                  <option>19 Josiah Chinamano</option>
+                  <option>104 Nelson Mandela</option>
+                  <option>Michael Gelfrand 24 Hours</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="reqExam">Requested Exam:</label>
+                <select class="form-control" id="reqExam" name="reqExam">
+                  <option>--select--</option>
+                  <option>MRI</option>
+                  <option>C.T. Scan</option>
+                  <option>Ultrasound Scan</option>
+                  <option>Mammography</option>
+                  <option>Fluoroscopy</option>
+                  <option>General X-Ray</option>
+                  <option>Multiple Scans</option>
+                </select>
+              </div>
+            </div>
           </div>
           <div class="form-group">
-            <label for="reqExam">Requested Exam:</label>
-            <select class="form-control" id="reqExam" name="reqExam">
-              <option>--select--</option>
-              <option>MRI</option>
-              <option>Cardiac C.T.</option>
-              <option>Ultrasound Scan</option>
-              <option>Mammography</option>
-              <option>Fluoroscopy</option>
-              <option>General X-Ray</option>
-              <option>Multiple Scans</option>
-            </select>
+            <div class="form-row">
+              <div class="col-md-3">
+                <label for="refDoctor">Referring Doctor's Title:</label>
+                <select type="text" class="form-control" id="refDoctorTitle" name="refDoctorTitle">
+                  <option>--select--</option>
+                  <option>DR</option>
+                  <option>Professor</option>
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                  <option>Miss</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="refDoctor">Referring Doctor's Name:</label>
+                <input type="text" class="form-control" id="refDoctor" name="refDoctor" placeholder="Surname Initial">
+              </div>
+              <div class="col-md-4">
+                <label for="specialist">Referring Doctor's Specialty:</label>
+                <input type="text" class="form-control" id="refDoctorSpe" name="refDoctorSpe" placeholder="e.g. Radiologist, Oncologist Seurgon">
+              </div>
+            </div>
           </div>
+          <br>
           <h3>Contact Informaton</h3>
           <div class="form-group">
             <div class="form-row">
@@ -158,19 +204,19 @@
           </div>
           <div class="form-group">
             <div class="form-row">
-              <div class="col">
+              <div class="col-md-6">
                 <label for="address">Address</label>
                 <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St">
               </div>
-              <div class="col">
+              <div class="col-md-3">
                 <label for="address">Suburb</label>
                 <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="e.g. Borrowdale, Avondale">
               </div>
+              <div class="col-md-3">
+                <label for="address">City/Town</label>
+                <input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="e.g. Harare, Mutare">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="address">City/Town</label>
-            <input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="e.g. Harare, Mutare">
           </div>
             <input class="btn btn-default btn-success" type="submit" value="Submit" id="submit">
         </form>

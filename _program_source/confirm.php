@@ -67,6 +67,7 @@ file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
     <div class="row">
       <section class="col-md-12">
         <p>Patient: <?php echo $pateFirstName?> <?php echo $pateLastName?> has been added to our records with Visit ID: <?php echo $visID?></p>
+      <!--  <button id="request_form_btn" type="button" class="btn btn-success">Create  and  Download Generated Request Form</button> -->
       </section>
       <footer class="col-md-12">
         <p>Designed by Dumezweni Ndlovu</p>
